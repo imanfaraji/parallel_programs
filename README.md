@@ -1,4 +1,4 @@
-The following work are some sample parallel programs that are developed by Iman Faraji. 
+In the following, I provide some sample parallel programs that are developed by me. 
 
 # MPI ACCELERATOR BENCHMARK
 
