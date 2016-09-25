@@ -1,4 +1,4 @@
-The Copyright of all of the following work goes to Iman Faraji. 
+The following work are some sample parallel programs that are developed by Iman Faraji. 
 
 # MPI ACCELERATOR BENCHMARK
 
