@@ -39,25 +39,30 @@ benchmark_name: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-dim_z_keep <br />
 
 
-# -----------------------------------------------------------------------------------
+# -------------
 
 # Sample Parallel Programs
 
 Program1: 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Measuring value of PI using 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Measuring value of PI using 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Measuring value of PI using 
         
-Program2: 
+Program2:
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Building a 3D mesh using cartesian communicator and using its sub-communicator in a broadast call
 
 Program3: 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Finding the minimum value in a list of numbers
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Finding the minimum value in a list of numbers
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Finding the minimum value in a list of numbers  
     
 Program4:     
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Parallelelizing Mandelbrot program using Dynamic Assignment
       
 Program5: 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Using Divide and Conquer Strategy to add a list of numbers
