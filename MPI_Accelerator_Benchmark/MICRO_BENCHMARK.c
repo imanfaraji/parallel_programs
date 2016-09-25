@@ -50,9 +50,6 @@ int main(int argc, char ** argv)
     	fclose(gpuid_file);
     }
 
-
-
-
 	//custom Device Selection
 	//TODO Read Device ID from a file  --> DEV_ID = GPU_ID_FILE[RANK_ID]
 
@@ -105,8 +102,10 @@ int main(int argc, char ** argv)
     int iter_c = 0, j;
 	double start_time, end_time;
 	//nullify/0 all of the MPI requests and their counters
-	for(j = 0; j < __REQ_MAX__; j++) req[j] = MPI_REQUEST_NULL;
-	for(j = 0; j < __REQ_MAX_COLL__; j++) req_coll[j] = MPI_REQUEST_NULL;
+	for(j = 0; j < __REQ_MAX__; j++) 
+		req[j] = MPI_REQUEST_NULL;
+	for(j = 0; j < __REQ_MAX_COLL__; j++) 
+		req_coll[j] = MPI_REQUEST_NULL;
 
 	req_count = 0;
 	req_count_coll = 0;
@@ -125,21 +124,19 @@ int main(int argc, char ** argv)
 		MPI_Waitall(req_count, req, stat); //wait for completion of Isend/Irecv
 
 		//wait on potential collective benchmarks
-		//for(j = 0; j != req_count_coll; j++)
-		//	MPI_Wait(&req_coll[j], &stat_coll[j]);   //wait for completion of the collective
+		for(j = 0; j != req_count_coll; j++)
+			MPI_Wait(&req_coll[j], &stat_coll[j]);   //wait for completion of the collective
 
 		 //nullify all the MPI requests
 		for(j = 0; j < req_count; j++)
 		  if(req[j] != MPI_REQUEST_NULL)
 			  MPI_Request_free(&req[j]);
 
-		//for(j = 0; j < req_count_coll; j++)
-		//		  if(req_coll[j] != MPI_REQUEST_NULL)
-		//			  MPI_Request_free(&req_coll[j]);
+		for(j = 0; j < req_count_coll; j++)
+				  if(req_coll[j] != MPI_REQUEST_NULL)
+					  MPI_Request_free(&req_coll[j]);
 
 		iter_c++;
-//        cudaDeviceSynchronize();
-//       MPI_Barrier(MPI_COMM_WORLD);
     }
     MPI_Barrier(MPI_COMM_WORLD);
 	end_time = MPI_Wtime();

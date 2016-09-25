@@ -110,8 +110,7 @@ void _3DTORUS_func(void *src, void *dst, int my_rank, char *type, int msg_size, 
 				  req_count++;		
 		}
 		
-		
-		
+			
 		//2nd
 		if ((mx-1) >= 0)
 		{
