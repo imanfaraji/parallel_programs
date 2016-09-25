@@ -45,25 +45,24 @@ benchmark_name: <br />
 
 Program1: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Measuring value of PI using 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Measuring value of PI using 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Measuring value of PI using 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Measuring value of PI using <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Measuring value of PI using <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Measuring value of PI using <br />
         
 Program2:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Building a 3D mesh using cartesian communicator and using its sub-communicator in a broadast call
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Building a 3D mesh using cartesian communicator and using its sub-communicator in a broadast call <br />
 
 Program3: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Finding the minimum value in a list of numbers
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Finding the minimum value in a list of numbers
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Finding the minimum value in a list of numbers  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Finding the minimum value in a list of numbers <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenMP -- Finding the minimum value in a list of numbers <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posix Thread -- Finding the minimum value in a list of numbers  <br />
     
 Program4:     
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Parallelelizing Mandelbrot program using Dynamic Assignment
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Parallelelizing Mandelbrot program using Dynamic Assignment <br />
       
 Program5: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Using Divide and Conquer Strategy to add a list of numbers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPI -- Using Divide and Conquer Strategy to add a list of numbers <br />
